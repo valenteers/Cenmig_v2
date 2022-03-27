@@ -16,7 +16,7 @@ document.write(`
                 <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">
                     <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
                         <li>
-                            <a class="nav-link page-scroll active" href="./index.html#header">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link page-scroll" href="./index.html#header">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li>
                             <a class="nav-link page-scroll" href="./index.html#areas">Areas</a>
