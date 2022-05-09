@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="./component/meta.js"></script>
+        <script src="./js/plotly-latest.min.js"></script>
+        <script src="./js/gstatic.js"></script>
+        <script src="./js/chartjs.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+        <!-- <script src="https://www.gstatic.com/charts/loader.js"></script> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    </head>
+	<body data-spy="scroll" data-target=".fixed-top">
+
+	<script src="./component/header.js"></script>
+
+    <!-- Header -->
+    <!-- end of header -->
+
+    <!-- Basic -->
+    <div class="ex-basic-1 py-12">
+    </div>
+    <!-- end of basic -->
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-12">
+        <div class="container px-4 sm:px-8 xl:px-32">
+            <h2 class="text-center p-2">Bioinformatics Workshops 28/03/2020</h2>
+            <h2 class="text-center p-2">"การวิเคราะห์ทางวิวัฒนาการ</h2>
+            <h2 class="text-center p-2">โดยการใช้ BEAST (Evolutionary analysis with BEAST)"</h2>
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+    <section class="hero container lg:w-5/12 md:w-3/5  mx-auto pb-6 my-12">
+        <img class="mx-auto rounded-3xl" src="images/event/evolutionary_analysis_with_BEAST/DSC_2073.webp" alt="screenshot" >
+    </section>
+    <div class="ex-basic-1 pt-0">
+        <div class="container px-4 sm:px-8 xl:px-32">
+            <h2 class="text-center p-2">Speaker</h2>
+            <h3 class="text-center p-2">โดย ดร. ภากร เอื้ยวสกุล</h2>
+        </div>
+    </div>
+
+
+	<!-- <div class="group"> -->
+	 <span class="font-bold text-gray-700" id="dropdown">Admission</span>
+	 <div class=" hidden group-hover:block  bg-white  w-auto">
+	  <div class="p-3 hover:bg-gray-200 ">
+	    Admission Process
+	  </div>
+	  <div class="p-3 hover:bg-gray-200">
+	    option 1
+	  </div>
+	  <div class="p-3 hover:bg-gray-200">
+	    option 2
+	  </div>
+	 </div> 
+	<!-- </div> -->
+	<script>
+		const dropdownButton = document.querySelector("#dropdown");
+		const dropdownList = document.querySelector("#dropdown + div.hidden");
+
+		dropdownButton.addEventListener("click", () => {
+		  dropdownList.classList.toggle("hidden");
+		});
+	</script>
+    <script src="./component/footer.js"></script>
+
+    <!-- Scripts -->
+    <script src="component/scripts.js"></script>
+	</body>
+</html>

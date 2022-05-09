@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<!-- download https://cdnjs.com/libraries/vue -->
+        <script src="./component/meta.js"></script>
+        <script src="./js/vue3.2.3.global.min.js"></script>
+        <!-- <script src="./js/vue2.6.6.js"></script> -->       
+    </head>
+    <body data-spy="scroll" data-target=".fixed-top">
+    	<div id="app">
+    		<script src="./component/header.js"></script>
+			<!-- {{ message }} -->
+			<h1>{{ title }}</h1>
+		    <my-button @whenclick="changeTitleText"></my-button>
+			<script src="./component/footer.js"></script>
+		</div>	
+    </body>
+	<script>
+		let app = Vue.createApp({
+		    data(){
+		        return {
+		            title: 'นี่คือ Title แบบ Vue 3',
+		        }
+		    },
+		    methods: {
+		        changeTitleText(){
+		            this.title = 'โค้ดนี้ทำงานได้ใน Vue 3'
+		        }
+		    },
+		})
+
+		app.component('my-button', {
+		    template: `
+		        <button @click="handleClick">Click Me!</button>
+		    `,
+		    methods: {
+		        handleClick(){
+		            this.$emit('whenclick')
+		            // changeTitleText()
+		        }
+		    },
+		})
+
+		app.mount('#app')
+	</script>
+</html>
